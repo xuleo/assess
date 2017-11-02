@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>镇江市办事审批服务平台</title>
+		<link rel="stylesheet" type="text/css" href="css/reset_pc.css"/>
+		<link rel="stylesheet" type="text/css" href="css/function.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pgwslider.css"/>
+		<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+	    <script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+	    <![endif]-->
+	    <!--[if lte IE 9]>
+	    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/html5.min.js" type="text/javascript" charset="utfs" type="text/javascript" charset="utf-8"></script>
+	    <![endif]-->
+	    <!--[if lte IE 7]>
+	    <div id="errorie"><div>您还在使用老掉牙的IE，正常使用系统前请升级您的浏览器到 IE8以上版本 <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-8-worldwide-languages">点击升级</a>&nbsp;&nbsp;强烈建议您更改换浏览器：<a href="http://down.tech.sina.com.cn/content/40975.html" target="_blank">谷歌 Chrome</a></div></div>
+	    <script type="text/javascript">
+	        alert('您还在使用老掉牙的IE，正常使用系统前请升级您的浏览器到 IE8以上版本')
+	    </script>
+	    <![endif]-->
+	</head>
+	<body>
+		<!-- 头部天气及用户信息  start -->
+		<div class="g-toolbar">
+			<div class="m-toolbar w f-cb">
+				<!-- 左侧天气 -->
+				<p class="weather f-fl">
+					<span class="now">2016年8月17日 星期三 </span>
+					<span class="ico"><img src="img/weather-q.png"/></span>
+					<span>晴 28℃~36℃</span>
+				</p>
+				<!-- 右侧用户信息 -->
+				<p class="userinfo f-fr">
+					<span class="username">
+						<span class="ico"><img src="img/user-ico.png"/></span>
+						<span>飞翔的包子</span>
+					</span>
+					<span class="btn">注销</span>
+				</p>
+			</div>
+		</div>
+		<!-- 头部天气及用户信息  end -->
+		
+		<!-- header start -->
+		<header class="g-header">
+			<div class="m-header w f-cb">
+				<!-- logo -->
+				<div class="m-logo f-fl f-cb">
+					<span class="ico f-fl"><img src="img/logo.png"/></span>
+					<!--区域下拉选择-->
+					<span class="selectCase f-fl">
+						<span class="selectCase-btn">
+							<span class="txt">镇江市</span><span class="ico"><img src="img/jt-select1.png"/></span>							
+						</span>
+						<!--下拉选择详情框-->
+						<div class="selectCase-details">
+							<div class="selectCase-list">
+								<span class="title">市</span>
+								<ul class="">
+									<li class="active"><a href="javascript:;">镇江</a></li>
+								</ul>
+							</div>
+							<div class="selectCase-list selectCase-list2">
+								<span class="title">区</span>
+								<ul class="">
+									<li><a href="javascript:;">丹阳市</a></li>
+									<li><a href="javascript:;">扬中市</a></li>
+									<li><a href="javascript:;">句容市</a></li>
+									<li><a href="javascript:;">京口区</a></li>
+									<li><a href="javascript:;">润州区</a></li>
+									<li><a href="javascript:;">丹徒区</a></li>
+									<li><a href="javascript:;">大港新区</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--箭头-->
+						<span class="select-jt2"><img src="img/jt-select2.png"/></span>
+					</span>
+				</div>
+				<!--搜素框-->
+				<div class="m-search-container f-fr">
+					<div class="m-search f-cb">
+						<input class="f-fl" type="text" name="" id="" value="" placeholder="请输入关键字"/>
+						<a href="javascript:;" class="btn ico f-fr"><img src="img/search.png"/></a>
+					</div>
+					<!--热搜关键字-->
+					<div class="keys f-cb">
+						<span class="keys-title f-fl">热搜：</span>
+						<ul class="f-cb f-fl">
+							<li>生育证</li>
+							<li>企业注册</li>
+							<li>公积金</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+		
+		<!-- 导航 start -->
+		<nav class="g-nav">
+			<div class="m-nav w">
+				<ul class="f-cb">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">个人办事</a></li>
+					<li><a href="javascript:;">单位办事</a></li>
+					<li><a href="javascript:;">行政审批</a></li>
+					<li><a href="javascript:;">公共服务</a></li>
+					<li class="active"><a href="javascript:;">政务公开</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- 导航 end -->
+		
+		<!-- 主体部分 start -->
+		<div class="g-main">
+			<div class="m-main w">
+				<div class="template-container f-cb">
+					<!-- 新闻轮播图 -->
+					<div class="pgwSlider-container f-fl">
+						<ul class="pgwSlider">
+							<script id="newSlider" type="text/html">
+							    {{#data}}
+							    	<li>
+										<a href="javascript:;" target="_blank"> <img src={{image}}  data-description={{title}}></a>
+									</li>
+							    {{/data}}
+							</script>
+						</ul>
+					</div>
+					<!--最新公告-->
+					<div class="template template-r f-fl">
+						<h3>最新公告</h3>
+						<div class="hotNews">
+							<script id="hotNews" type="text/html">
+							    <a href="javascript:;">
+							    	<h4>{{hotNewsData.title}}</h4>
+									<p>{{hotNewsData.detail}}</p>
+							    </a>	
+							</script>					
+						</div>
+						<ul class="list newList">
+							<script id="newList" type="text/html">
+						    	{{#newNoticedata}}
+							    	<li class="f-cb">
+										<a href="javascript:;">
+											<span class="txt f-fl">{{title}}</span>
+											<span class="time f-fr">{{date}}</span>
+										</a>
+									</li>
+							    {{/newNoticedata}}
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="template-container f-cb">
+					<!--政策速递-->
+					<div class="template template-l f-fl">
+						<h3>政策速递</h3>
+						<ul class="list policyList">
+							<script id="policyList" type="text/html">
+						    	{{#policyData}}
+							    	<li class="f-cb">
+										<a href="javascript:;">
+											<span class="txt f-fl">{{title}}</span>
+											<span class="time f-fr">{{date}}</span>
+										</a>
+									</li>
+							    {{/policyData}}
+							</script>
+						</ul>
+					</div>
+					<!--便民提示-->
+					<div class="template template-r f-fl">
+						<h3>便民提示</h3>
+						<ul class="list tipList">
+							<script id="tipList" type="text/html">
+						    	{{#tipData}}
+							    	<li class="f-cb">
+										<a href="javascript:;">
+											<span class="txt f-fl">{{title}}</span>
+											<span class="time f-fr">{{date}}</span>
+										</a>
+									</li>
+							    {{/tipData}}
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="template-container f-cb">
+					<!--适合我的办理时间段-->
+					<div class="template template-l f-fl">
+						<h3>适合我的办理时间段</h3>
+						<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    					<div id="timeSlot" style="width: 100%;height:200px;"></div>
+					</div>
+					<!--适合我办理的工作日-->
+					<div class="template template-r f-fl">
+						<h3>适合我办理的工作日</h3>
+						<div id="workday" style="width: 100%;height:200px;"></div>
+					</div>
+				</div>
+				<div class="f-cb">
+					<!--实体大厅及服务引导-->
+					<div class="template template-l f-fl guide f-cb" style="margin: 0 0 20px 0;width: 525px;">
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<span class="ico"><img src="img/icon-hall.png"/></span>
+									<div class="txt">
+										<p>实体大厅</p>
+										<p>SHITIDATING</p>
+									</div>
+									<span class="ico"><img src="img/icon-arrow.png"/></span>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<span class="ico"><img src="img/icon-guide.png"/></span>
+									<div class="txt">
+										<p>服务引导</p>
+										<p>FUWUYINDAO</p>
+									</div>
+									<span class="ico"><img src="img/icon-arrow.png"/></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--服务热线-->
+					<div class="template template-r f-fr hotline" style="background-color: #fff;padding: 15px 20px 12px 20px;width: 435px;margin: 0;">
+						<h3>服务热线</h3>
+						<ul class="f-cb">
+							<li>
+								<a href="javascript:;">
+									<p>12345</p>
+									<p>镇江市</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<p>12333</p>
+									<p>社保热线</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<p>12331</p>
+									<p>食品安全</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<p>12315</p>
+									<p>质量热线</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="template-container f-cb">
+					<!--微博互动-->
+					<div class="template template-l f-fl">
+						<h3>微博互动</h3>
+						<div class="interaction">
+							<a class="arrow-left" href="javascript:;"></a>
+							<a class="arrow-right" href="javascript:;"></a>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<a href="jabascript:;" class="swiper-slide">
+										<img src="img/wb-example00.png"/>
+										<p>政务服务中心</p>
+									</a>
+									<a href="jabascript:;" class="swiper-slide">
+										<img src="img/wb-example01.png"/>
+										<p>镇江市</p>
+									</a>
+									<a href="jabascript:;" class="swiper-slide">
+										<img src="img/wb-example02.png"/>
+										<p>镇江公安</p>
+									</a>
+									<a href="jabascript:;" class="swiper-slide">
+										<img src="img/wb-example03.png"/>
+										<p>镇江交警</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--微信互动-->
+					<div class="template template-r f-fl WeChat-interaction">
+						<h3>微信互动</h3>
+						<ul class="f-cb">
+							<li>
+								<span><img src="img/wx-example.png"/></span>
+								<p>政务服务中心</p>
+							</li>
+							<li>
+								<span><img src="img/wx-example.png"/></span>
+								<p>镇江市</p>
+							</li>
+							<li>
+								<span><img src="img/wx-example.png"/></span>
+								<p>镇江公安</p>
+							</li>
+							<li>
+								<span><img src="img/wx-example.png"/></span>
+								<p>镇江交警</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+			
+			</div>
+		</div>
+		<!-- 主体部分 end -->
+		
+		<!-- 底部 start -->
+		<footer class="g-footer">
+			<ul>
+				<li>
+					<span>主管部门：</span>
+					<span>镇江市政服务管理办公室</span>
+				</li>
+				<li>
+					<span>版权所有：</span>
+					<span>镇江市政服务管理办公室</span>
+				</li>
+				<li>
+					<span>技术支持：</span>
+					<span><a href="http://www.epoint.com.cn" target="_blank">江苏国泰新点软件有限公司</a></span>
+				</li>
+			</ul>
+			<p>
+				<span>备案号：苏ICP备8888888号 ©2012-2015</span>
+				<span>总访问量：34525</span>
+				<span>今日：5500</span>
+				<span>昨日：6500</span>
+			</p>
+		</footer>
+		<!-- 底部 end -->
+		
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mustache.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pgwslider.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
